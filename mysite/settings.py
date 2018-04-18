@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-import configparser
+from backports import configparser
 
 config = configparser.ConfigParser()
 config.read('secrets.ini')
