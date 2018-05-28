@@ -13,12 +13,11 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 import os
 from backports import configparser
 
-config = configparser.ConfigParser()
-config.read('/home/ubuntu/eduDSExample/secrets.ini')
-
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+config = configparser.ConfigParser()
+config.read('/home/ubuntu/eduDSExample/secrets.ini')
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
